@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="academic.css" type="text/css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="home_page.html">Spencer's Stuff</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="home_page.html">Home</a></li>
+          <li><a href="personal.html">Personal Projects</a></li>
+          <li class="active"><a href="academic.html">Academic Projects</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="title">
+      <img src="images/education.jpg"/>
+      <div class="title-text">
+        <h1>Academic Projects</h1>
+        <p>Here are some of the many academic projects I have completed throughout my college years.
+          Feel free to visit my github to try out the code of my projects for yourself.</p>
+      </div>
+
+    </div>
+
+    <hr>
+
+    <div class="projects">
+      <div class="project">
+        <h1>Candy Crush Clone (Java)</h1>
+        <h2>University of California, Irvine.  EECS 40</h2>
+        <p>This is an android application that is meant to mimic the game candy crush.
+          It is a game that features a 9x9 board of five different candy types, and ends when
+          players reach a specific score. The application features five different candy types,
+          initializes with a completely randomized board, allows for combo scoring,
+          and prevents players from inputting illegal moves.</p>
+        <a href="https://github.com/sbkam5/Candy_Crush" target="_blank">https://github.com/sbkam5/Candy_Crush</a>
+        <br>
+        <video src="videos/Candy.mp4" width="400px" height="300px" controls>
+          Video Not Supported
+        </video>
+      </div>
+
+      <div class="project">
+        <h1>Super Mario Clone (Java)</h1>
+        <h2>University of California, Irvine.  EECS 40</h2>
+        <p>An app that is meant to function as a Super Mario clone. I used multi-threading to
+          implement a game loop into the application.  The app included multiple enemies and power-ups,
+           all of which were their own class objects and had unique interactions with the player.
+           Lastly, I used Rect object methods such as intersect to help account for collision detection
+          so that the player could not move through in game objects such as platforms or piranha plant
+           pots.</p>
+        <a href="https://github.com/sbkam5/Mario" target="_blank">https://github.com/sbkam5/Mario</a>
+        <br>
+        <video src="videos/Mario.mp4" width="400px" height="300px" controls>
+          Video Not Supported
+        </video>
+      </div>
+
+      <div class="project">
+        <h1>Geometry Solver (HTML & Javascript)</h1>
+        <h2>University of California, Irvine.  EECS 118</h2>
+        <p>This is a web application that was made with jsp files using html and Javascript.
+          that is used to solve for two types of geometry problems.  In both problems,
+           the geometry solver takes in known inputs from users and calculates for as many
+           outputs as possible.  The algorithm of the solver involved a continuous loop that
+            solved for particular unknowns.  Those previously unknown values would then be added
+           to the list of “known” values, and this loop of solving for unknowns would continue
+            until no other unknown value could be solved for.</p>
+        <a href="https://github.com/sbkam5/Geometry_Solver" target="_blank">https://github.com/sbkam5/Geometry_Solver</a>
+        <br>
+        <video src="videos/Solver_Demo.mp4" width="400px" height="300px" controls>
+          Video Not Supported
+        </video>
+      </div>
+
+  </body>
+
+</html>
