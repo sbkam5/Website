@@ -3,17 +3,27 @@
 /*Me!!!!!!**********************************/
 .title {
   display: grid;
-  grid-template-columns: 10% 80% 10%;
   background-color: grey;
   width: 100%;
+  height: 700px;
   margin-top: -20px;
 }
 
+@media screen and (max-width: 900px){
+  .title{
+    height: auto;
+  }
+}
+
+
+.title{
+  grid-template-columns: 0% 100% 0%;
+}
+
+
 .text{
   color: black;
-  font-size: 30px;
-  font-style: italic;
-  grid-column: 2 / span 1;
+  grid-column: 1 / span 3;
   grid-row: 1 / span 1;
   align-self: flex-end;
   text-align: center;
@@ -21,11 +31,48 @@
   opacity: 0.5;
 }
 
+.text p{
+  font-family: 'Bangers', cursive;
+}
+
+@media screen and (min-width: 701px){
+  .text{
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .text{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .text {
+    font-size: 16px;
+  }
+}
+
 .img-1{
+  object-fit: cover;
+  height: 100%;
   width: 100%;
   grid-column: 2 / span 1;
   grid-row: 1 / span 1;
 }
+
+.img-2{
+  width: 100%;
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+}
+
+/*@media screen and (min-width: 501px){
+  .img-1{
+    width: 100%;
+  }
+}*/
+
 
 
 /*@media screen and (min-width: 1301px){
@@ -126,9 +173,9 @@
   #to{
     padding-left:90px;
   }
-}*/
+}
 
-/*Small Spider-man*********************/
+/*Small Spider-man*********************
 .title-s {
   background-image: url("images/spiderverse-image.jpg");
   background-size: cover;
@@ -144,7 +191,7 @@
   top: 170px;
   font-size: 50px;
 }
-
+*/
 
 /*About*/
 @media screen and (min-width: 1001px){
